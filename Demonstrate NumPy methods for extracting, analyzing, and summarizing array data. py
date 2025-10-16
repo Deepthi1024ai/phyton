@@ -1,0 +1,19 @@
+import numpy as np 
+ 
+arr = np.array([1, 3, 5, 7, 3, 5, 9, 2, 5]) 
+num = 4 
+ 
+less_than_num = arr[arr < num] 
+greater_than_num = arr[arr > num] 
+print("Original array:", arr) 
+print("Numbers less than 4:", less_than_num) 
+print("Numbers greater than 4:", greater_than_num) 
+ 
+print("Maximum value:", np.max(arr)) 
+print("Minimum value:", np.min(arr)) 
+print("Index of maximum value:", np.argmax(arr)) 
+print("Index of minimum value:", np.argmin(arr)) 
+ 
+print("Unique elements:", np.unique(arr)) 
+print("Count of each element:", np.bincount(arr)) 
+print("Representation of array:", np.array_repr(arr))
